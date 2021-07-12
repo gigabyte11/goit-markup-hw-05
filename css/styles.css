@@ -556,7 +556,7 @@ img{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     background-color: rgba(0,0,0,0.2);
 }
 .modal{
@@ -564,7 +564,7 @@ img{
     left: 50%;
     top: 50%;
     width: 528px;
-    height: 581px;
+    height: 580px;
     background-color: #FFFFFF;
     transform: translate(-50%,-50%);
 }
@@ -580,6 +580,11 @@ img{
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 
