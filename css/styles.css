@@ -452,7 +452,7 @@ img{
 .footer-container{
     display: flex;
     align-items: baseline;
-   /* width: 1200px;
+    /* width: 1200px;
     right: 252px;*/
 }
 
@@ -568,6 +568,21 @@ img{
     background-color: #FFFFFF;
     transform: translate(-50%,-50%);
 }
+/*****Опис стилю кнопки Close****/
+.close-btn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+
 /*portfolio.html*/
 /*Стилізація та сторінки portfolio*/
 
