@@ -550,7 +550,24 @@ img{
     background-color: #2196F3;
 }
 
-
+/*Модальне вікно*/
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,0.2);
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    transform: translate(-50%,-50%);
+}
 /*portfolio.html*/
 /*Стилізація та сторінки portfolio*/
 
