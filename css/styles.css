@@ -218,7 +218,7 @@ img{
 .section
 {
     padding-top: 94px;
-   /* padding-bottom: 94px;*/
+    /* padding-bottom: 94px;*/
 }
 .features-container
 {
@@ -559,8 +559,13 @@ img{
     letter-spacing: 0.06em;
     color: #212121;
 }
+.portfolio-link{
+    text-decoration: none;
+    list-style: none;
+}
 .portfolio-list-item
 {   
+    text-decoration: none;
     margin-top: 4px;
     margin-left: 24px;
     margin-right: 24px;
@@ -615,4 +620,39 @@ img{
 0px 1px 1px rgba(0, 0, 0, 0.12), 
 0px 4px 4px rgba(0, 0, 0, 0.06), 
 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+/*Опис вспливаючого вікна на контенті*/
+.portfolio-link{
+    display: block;
+}
+.portfolio-overlay{
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgba(33,150,243, 0.9);;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 00.03em;
+    color: #FFFFFF;
+    overflow: auto;
+
+    transform: translateY(100%);
+    transition: transform 500ms linear;
+}
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay{
+    transform: translateY(0%);
 }
