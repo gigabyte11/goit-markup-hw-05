@@ -1,4 +1,28 @@
 /*Стилізація верхнього меню секції HEADER*/
+:root{
+    --color-text: #2196F3;
+    --color-text-logo: black;  
+    --color-text-menu:#212121;
+    --color-text-mail-tel:#757575;
+    --color-text-section: #212121;
+    --color-sections-text:#757575;
+    --text-color-hero:#FFFFFF;
+    --color-text-footer-logo-s: white;
+
+    --color-border-header: #ECECEC;
+    --color-border-portfolio: #EEEEEE;
+    --color-svg-border: #AFB1B8;
+
+    --background-color-hero: #2f303a;
+    --background-color-btn: #188ce8;
+    --background-color-footer:#2F303A;
+    --background-color-section3: #F5F4FA;
+    --background-color-modal-btn-potfolio:#2196F3;
+
+    --font-family-text: Roboto;
+    --font-family-logo: Raleway;
+}
+
 /*Обнуление отступов*/
 h1,
 h2,
@@ -59,7 +83,7 @@ img{
 .logo{
     font-family: Raleway; 
     font-style: normal; 
-    font-weight: bold; s
+    font-weight: bold;
     font-size: 26px; 
     line-height: 31px;
     letter-spacing: 0.03em;
@@ -126,7 +150,7 @@ img{
 .mail-link{
     display: flex;
     align-items: center;
-    margin-left: 331px;
+    margin-left: 305px;
     
     font-family: Roboto; 
     font-style: normal; 
@@ -141,7 +165,7 @@ img{
 .tel-link{   
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 30px;
     
     font-family: Roboto; 
     font-style: normal; 
@@ -195,15 +219,17 @@ img{
 {
     align-items: center;
     width: 696px;
-    margin-left: 245px;
+    margin: auto;
     margin-bottom: 30px;
     font-family: Roboto; 
     font-style: normal; 
     font-weight: 900; 
     font-size: 44px; 
     line-height: 1.36;
-    color: #FFFFFF;
-} 
+    letter-spacing: 0.06em;
+    color: var(--text-color-hero);
+    text-transform: uppercase;
+}
 
 .modal-btn 
 {
@@ -229,7 +255,8 @@ img{
 .section
 {
     padding-top: 94px;
-    /* padding-bottom: 94px;*/
+    padding-bottom: 94px;
+    margin: auto;
 }
 .features-container
 {
@@ -240,8 +267,13 @@ img{
 {
     display: flex;
     align-items: center;
-    margin-right: 30px;
+    margin-right: -30px;
+    justify-content: center;
 }
+.features-menu{
+    flex-basis: calc(100%/4 - 270px);
+}
+
 /*.list{
     width: 270px;
 }
@@ -265,6 +297,8 @@ img{
     color: #212121;
 }
 .features{
+    width: 270px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,13 +322,14 @@ img{
     font-style: normal; 
     font-weight: normal; 
     font-size: 14px; 
-    line-height: 1.71;
+    line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
 }
 
 /*Секція чим займаємося Section-2*/
 .work{
+    padding: 0;
     padding-bottom: 94px;
 }
 .section-work
@@ -385,7 +420,6 @@ img{
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .section-profession
@@ -453,11 +487,13 @@ img{
 
 .client-icon:hover,
 .client-icon:focus{
-    fill: #2196F3;
+    fill: var(--color-text);
+    border-color: var(--color-text);
 }
 .client-link:hover,
 .client-link:focus{
-    border-color: #2196F3;
+    fill: var(--color-text);
+    border-color: var(--color-text);
 }
 /*Стилізація секяції footer*/
 
@@ -478,7 +514,7 @@ img{
 {
     font-family: Raleway; 
     font-style: normal; 
-    font-weight: bold; s
+    font-weight: bold;
     font-size: 26px; 
     line-height: 1.19;
 /* identical to box height */ 
@@ -617,6 +653,8 @@ img{
 
 .modal-btn-portfolio
 {
+    width: 145px;
+    height: 38px;
     font-family: Roboto; 
     font-style: normal;
     font-weight: 500; 
@@ -634,8 +672,8 @@ img{
 .modal-btn-portfolio:hover,
 .modal-btn-portfolio:focus
 {
-    color: #FFFFFF;
-    background: #2196f3;
+    color: var(--text-color-hero);
+    background: var(--color-text);
 }
 
 .portfolio-list
@@ -680,12 +718,12 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;/*робить контент по центру*/
+    margin-bottom: 50px;
+    margin-top: 94px;
 }
 
 .list-portfolio-menu
 {
-    margin-top: 94px;
-    margin-bottom: 34px;
     margin-left: 8px;
 }
 .portfolio-content
@@ -713,6 +751,10 @@ img{
 0px 4px 4px rgba(0, 0, 0, 0.06), 
 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.portfolio-content .portfolio-list-content{
+    flex-basis: calc(100%/3 - 30px)
+    }
+
 /*Опис вспливаючого вікна на контенті*/
 .portfolio-link{
     display: block;
