@@ -445,9 +445,10 @@ img{
 }
 .social-network-link{
     display: flex;
+    width: 44px;
+    height: 44px;
     align-items: center;
     justify-content: center;
-    padding: 12px;
     fill: var(--color-svg-border);
     border-radius: 50%;
     transition: color 250ms;
